@@ -1,0 +1,13 @@
+version: "3"
+services:
+    terraria:
+        build: ./terraria
+        image: terraria:1353
+        ports:
+          - "7777:7777"
+        volumes:
+          - persist:/terraria/persist
+
+volumes:
+    persist:
+      driver: local
