@@ -3,6 +3,7 @@ services:
     terraria:
         build: ./terraria
         image: terraria:1353
+        stop_grace_period: 30s
         ports:
           - "7777:7777"
         volumes:
