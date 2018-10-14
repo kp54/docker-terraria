@@ -19,6 +19,5 @@ FROM debian:jessie-slim
 WORKDIR /terraria
 
 COPY --from=builder /tmp/dist/* ./
-COPY serverconfig.txt .
 
-ENTRYPOINT [ "./executor", "./TerrariaServer.bin.x86_64", "exit", "-config", "serverconfig.txt" ]
+ENTRYPOINT [ "./executor", "./TerrariaServer.bin.x86_64", "exit", "-config", "config/serverconfig.txt" ]

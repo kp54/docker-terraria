@@ -1,4 +1,5 @@
 version: "3"
+
 services:
     terraria:
         build: ./terraria
@@ -8,6 +9,7 @@ services:
           - "7777:7777"
         volumes:
           - persist:/terraria/persist
+          - ./config:/terraria/config
 
 volumes:
     persist:
