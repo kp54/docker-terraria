@@ -1,2 +1,3 @@
 # place your awesome config here !
-# hint: files under "/terraria/persist" are persistent
+# tips: files under "/terraria/persist" are persistent
+#       "./config" will be mapped to "/terraria/config"
